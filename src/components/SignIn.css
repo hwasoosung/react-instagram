@@ -1,0 +1,126 @@
+.login_white_box {
+  max-width: 350px;
+
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+
+  margin: auto;
+  margin-top:10px;
+  padding: 10px 0;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#insta_logo {
+  width: 175px;
+  height: 51px;
+  margin: 40px 0 0 0;
+}
+
+#suggest_for_sign_up {
+  color: #999;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 40px;
+  text-align: center;
+}
+
+#part_or {
+  display: flex;
+  width: 268px;
+  flex-direction: row;
+  margin: 20px 40px 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.or_gray_line {
+  background-color: #c7c7c7;
+  width: 102px;
+  height: 1px;
+  flex-shrink: 3;
+  /*margin-top:10px;*/
+}
+
+#or {
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+
+  /*line-height: 15px;*/
+  margin: 0 18px;
+  /*flex_shrink: 0;*/
+
+  width:22.5px;
+  height: 15px;
+}
+
+#fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.input {
+  align-items: center;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  background: #fafafa;
+  width: 268px;
+  height: 32px;
+  margin: 0 40px 6px 40px;
+  /*padding: 0 10px 0 0 ;*/
+}
+
+form ::placeholder {
+  color: #999;
+  font-size: 12px;
+  padding: 0 0 0 10px ;
+}
+
+#agree_with_rule {
+  color: #999;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 10px 50px 10px;
+  text-align: center;
+}
+
+.agree_with_rule_bold {
+  text-decoration: none;
+  color: #999;
+  font-weight: 600;
+}
+
+.have_account_q {
+  color: #262626;
+  font-size: 14px;
+  margin: 20px;
+  text-align: center;
+}
+
+#sign_in {
+  color: #3897f0;
+  text-decoration: none;
+}
+
+.app_download_button {
+  height: 40px;
+  margin-right: 8px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+#app_download_buttons {
+  margin: auto;
+
+  justify-content: center;
+
+  display: flex;
+  flex-direction: row;
+}

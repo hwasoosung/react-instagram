@@ -1,0 +1,22 @@
+#fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.input {
+  align-items: center;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  background: #fafafa;
+  width: 268px;
+  height: 32px;
+  margin: 0 40px 6px 40px;
+  /*padding: 0 10px 0 0 ;*/
+}
+
+form ::placeholder {
+  color: #999;
+  font-size: 12px;
+  padding: 0 0 0 10px ;
+}

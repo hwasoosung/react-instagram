@@ -12,14 +12,14 @@ import UserForm from './UserForm';
 class SignIn extends React.Component {
   constructor(props) {
     super(props);
-    
-    this.state = {};
-
-    this.handleUserInfoCreate = this.handleUserInfoCreate.bind(this);
+    this.state = { userInfo: ""};
+    this.handleNewUserInfo = this.handleNewUserInfo.bind(this);
   }
 
-  handleUserInfoCreate(userInfo) {
-    this.setState({userInfo: userInfo}, () => { console.log(userInfo) })
+  handleNewUserInfo(userInfo) {
+    this.setState({
+      userInfo: userInfo
+    });
   }
 
   render() {
@@ -48,9 +48,10 @@ class SignIn extends React.Component {
             <p id="or">또는</p>
             <div className="or_gray_line" />
           </div>
-  
-          <UserForm onUserInfoCreate={this.handleUserInfoCreate}/>
-  
+
+          {/* User Input Form */}
+          <UserForm onUserInfoCreate={this.handleNewUserInfo}/>
+
           {/* agree with some rules */}
           <div id="agree_with_rule">
             <p>
@@ -62,11 +63,11 @@ class SignIn extends React.Component {
             </p>
           </div>
         </div>
-  
+
         <div className="user_list_white_box">
-          <UserList userInfo={this.state.userInfo}/>
+          <UserList userInfo={this.state.userInfo} />
         </div>
-  
+
         <div className="login_white_box">
           <p className="have_account_q">
             계정이 있으신가요?

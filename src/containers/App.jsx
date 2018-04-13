@@ -1,23 +1,11 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-
-import SignIn from '../components/SignIn'
-import Temporary from '../components/Temporary'
+import ForRoute from '../utils/ForRoute'
 
 function App() {
   return(
     <div>
-      <Main />
+      <ForRoute />
     </div>
-  );
-};
-
-function Main() {
-  return (
-  <Switch>
-    <Route exact path="/" component={SignIn}></Route>
-    <Route exact path="/temporary" component={Temporary}></Route>
-  </Switch>
   );
 };
 

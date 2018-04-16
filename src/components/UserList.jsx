@@ -16,7 +16,7 @@ class UserList extends React.Component {
     });
   }
   
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.handleNewUserInfo(nextProps.userInfo);
   }
 

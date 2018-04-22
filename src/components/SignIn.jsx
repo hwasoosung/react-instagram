@@ -8,6 +8,8 @@ import './SignIn.css';
 import SignInUpButton from './SignInUpButton';
 import UserList from './UserList';
 import UserForm from './UserForm';
+import UserFormContainer from '../containers/UserFormContainer';
+import UserListContainer from '../containers/UserListContainer';
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -50,7 +52,8 @@ class SignIn extends React.Component {
           </div>
 
           {/* User Input Form */}
-          <UserForm onUserInfoCreate={this.handleNewUserInfo}/>
+          <UserFormContainer />
+          {/* <UserForm onUserInfoCreate={this.handleNewUserInfo}/> */}
 
           {/* agree with some rules */}
           <div id="agree_with_rule">
@@ -65,7 +68,7 @@ class SignIn extends React.Component {
         </div>
 
         <div className="user_list_white_box">
-          <UserList userInfo={this.state.userInfo} />
+          <UserListContainer userInfo={this.state.userInfo} />
         </div>
 
         <div className="login_white_box">

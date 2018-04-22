@@ -19,16 +19,26 @@ class SignInUpButton extends React.Component {
   render() {
     if(this.props.name==="signInWithFacebook") {
       return (
-        <Link 
-          to={"/temporary"} 
+        <button
           className={styles.facebook_sign_in_button} 
           onClick={this.handleClick} 
           name={this.props.name}
           color={this.props.backgroundColor} 
         >
           <p className={styles.facebook_sign_in_button_text} color={this.props.textColor} >{this.props.text}</p>
-        </Link>
+        </button>
       );
+      // return (
+      //   <Link 
+      //     to={"/temporary"} 
+      //     className={styles.facebook_sign_in_button} 
+      //     onClick={this.handleClick} 
+      //     name={this.props.name}
+      //     color={this.props.backgroundColor} 
+      //   >
+      //     <p className={styles.facebook_sign_in_button_text} color={this.props.textColor} >{this.props.text}</p>
+      //   </Link>
+      // );
     }
     return (
       <button type="submit" id={styles.sign_up_button}>

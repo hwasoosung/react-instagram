@@ -1,11 +1,13 @@
 import React from 'react';
-import ForRoute from '../utils/ForRoute'
+import ForRoute from '../utils/ForRoute';
+import { Provider } from 'react-redux';
+import store from '../store';
 
 function App() {
   return(
-    <div>
+    <Provider store={store}>
       <ForRoute />
-    </div>
+    </Provider>
   );
 };
 

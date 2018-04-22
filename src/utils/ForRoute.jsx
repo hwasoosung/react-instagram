@@ -5,10 +5,11 @@ import Temporary from '../components/Temporary'
 
 function ForRoute() {
   return (
-  <Switch>
-    <Route exact path="/" component={SignIn}></Route>
-    <Route exact path="/temporary" component={Temporary}></Route>
-  </Switch>
+    <SignIn />
+  // <Switch>
+  //   <Route exact path="/" component={SignIn}></Route>
+  //   <Route exact path="/temporary" component={Temporary}></Route>
+  // </Switch>
   );
 };
 
